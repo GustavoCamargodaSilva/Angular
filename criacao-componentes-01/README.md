@@ -1,4 +1,3 @@
-# Angular
 # Fundamentos Angular/Componentes e Estilização
 
 site para se inspirar em design: https://dribbble.com/
@@ -16,6 +15,8 @@ spec.ts - arquivos de testes unitários.
 component.scss - componente de estilo 
 
 A anotation @ Component diz que a minha classe é um componente.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c7979090-a8ee-4840-ba4e-14f0c804b8e5/699fec89-48c0-40ea-9a90-48cdaade69e9/Untitled.png)
 
 - Selector: nome do component no html quando for referenciado. ex: <app-card> </app-card>
     - TemplateUrl: carregar o html que está dentro desse arquivo.
