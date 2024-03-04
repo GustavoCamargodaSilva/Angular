@@ -1,27 +1,28 @@
-# CriacaoComponentes01
+# Angular
+# Fundamentos Angular/Componentes e Estilização
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+site para se inspirar em design: https://dribbble.com/
 
-## Development server
+site para obter icons : https://www.flaticon.com/br/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para criar um projeto angular é necessário digitar o seguinte comando no terminal: 
 
-## Code scaffolding
+ng new projeto-inicial --no-standalone
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Comando para criar um component ng g c AQUI O NOME DO COMPONENTE
 
-## Build
+spec.ts - arquivos de testes unitários.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+component.scss - componente de estilo 
 
-## Running unit tests
+A anotation @ Component diz que a minha classe é um componente.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Selector: nome do component no html quando for referenciado. ex: <app-card> </app-card>
+    - TemplateUrl: carregar o html que está dentro desse arquivo.
+    - StyleUrls: estilo que vai carregar quando esse componente for chamado.
 
-## Running end-to-end tests
+Ideal é que sempre o component PAI mudar a posição/comportamento dos component filhos
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Criar componentes dinâmicos caso eles forem iguais e só mudem uma informação ou outra mas a estrutura for a mesma.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+card-button é um component filho dentro do meu app-card
