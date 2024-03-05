@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  
+ // @ts-ignore
+  plano: any = {
+    infos: undefined,
+  };
 }
