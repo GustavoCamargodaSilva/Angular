@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
+  plano = {
+    tipo: 'Simples',
+    preco: '1000'
+  }
 
+  getFullPrice(){
+    //metodo que pode ser chamado na interpolaçao
+  }
 }
