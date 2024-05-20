@@ -15,3 +15,7 @@
         font-size: 40px;
     }
 }
+
+:host ::ng-deep .card-button-cancel{
+    background-color: yellow !important;
+}
