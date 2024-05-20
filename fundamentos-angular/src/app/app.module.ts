@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardsModule } from './cards/cards.module';
 import { CardButtonCancelComponent } from './card-button-cancel/card-button-cancel.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { CardButtonCancelComponent } from './card-button-cancel/card-button-canc
     AppRoutingModule,
     CardsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
