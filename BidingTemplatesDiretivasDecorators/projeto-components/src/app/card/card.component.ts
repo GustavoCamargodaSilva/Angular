@@ -7,10 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
 
-  @Input('planType') planType: string = '';
+  
   @Input({required:true}) planPrice: number = 0;
+  @Input('planType') planType: string = '';
 
-  buttonClicked(valueEmitted: boolean) {
+
+  buttonClicked(valueEmitted: boolean): void {
     console.log('Button clicked!', valueEmitted);
   }
   
