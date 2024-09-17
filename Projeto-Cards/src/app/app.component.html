@@ -1,5 +1,9 @@
 
-<app-button [text]="'Adiquirir'" [style]="'purple'" [disabled]="true"
- (cliked)="buttonCliked()"></app-button>
-
-<app-button [text]="'Adiquirir 2'" [style]="'white'"></app-button>
+<div class="cards-container">
+    <app-card *ngFor = "let type of planType; let i = index"
+    [planType]="type"
+    [planPrice]="type === 'Simples' ? 100 : 200"
+    [cardStyle]="i === 0 ? 'orange' : 'purple'"
+    (buttonCliked)="onButtonCliked()"
+    ></app-card>
+</div>

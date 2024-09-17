@@ -6,9 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  planType: string[] = ['Simples', 'Completo'];
+  planPrice: number = 0;
   
-  buttonCliked(){
-    alert('Button clicked!');
+  onButtonCliked(){
+    alert('Button clicked');
+    //AQUI SERIA A CHAMADA HTTP
   }
 
 }
